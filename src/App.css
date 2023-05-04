@@ -93,7 +93,40 @@ a:hover {
   border-color: #666;
 }
 
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.project-card {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-out;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
 #skills {
   display: flex;

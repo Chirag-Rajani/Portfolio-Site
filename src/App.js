@@ -35,21 +35,27 @@ function App() {
 
         <section id="projects">
           <h2>My Projects</h2>
-          <div className="project-cards">
-            <div className="project-card">
-              <img src="project1.jpg" alt="Project 1" />
-              <h3>Project 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula, nisi sit amet sagittis eleifend, elit mauris lacinia sapien, vitae feugiat quam metus at erat. </p>
+          <div class="project-cards">
+            <div class="project-card">
+              <a href="https://chirag-rajani.github.io/Wordle/">
+                <img src="project1.jpg" alt="Project 1" />
+                <h3>Wordle</h3>
+                <p>A web app that generates random five-letter words for the popular game, Wordle.</p>
+              </a>
             </div>
-            <div className="project-card">
-              <img src="project2.jpg" alt="Project 2" />
-              <h3>Project 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula, nisi sit amet sagittis eleifend, elit mauris lacinia sapien, vitae feugiat quam metus at erat. </p>
+            <div class="project-card">
+              <a href="https://chirag-rajani.github.io/Audiophile-Website/">
+                <img src="project2.jpg" alt="Project 2" />
+                <h3>Audiophile Website</h3>
+                <p>A responsive website for a fictional high-end audio equipment company.</p>
+              </a>
             </div>
-            <div className="project-card">
-              <img src="project3.jpg" alt="Project 3" />
-              <h3>Project 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula, nisi sit amet sagittis eleifend, elit mauris lacinia sapien, vitae feugiat quam metus at erat. </p>
+            <div class="project-card">
+              <a href="https://chirag-rajani.github.io/Fylo/">
+                <img src="project3.jpg" alt="Project 3" />
+                <h3>Fylo</h3>
+                <p>A landing page for a cloud-based file storage and sharing service.</p>
+              </a>
             </div>
           </div>
         </section>
