@@ -20,7 +20,7 @@ function App() {
       <main>
         <section id="about">
           <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula, nisi sit amet sagittis eleifend, elit mauris lacinia sapien, vitae feugiat quam metus at erat. </p>
+          <p>Hi there, I'm Chirag Rajani, and I'm thrilled to be an aspiring web developer. From a young age, I've been captivated by the power and potential of technology. My passion for coding has led me to constantly explore and learn new skills, always with a pragmatic approach. Some might say that I have high energy, but I simply see it as being committed to my goals, and I won't rest until I land my first junior role. Oh, and by the way, I'm pretty easy to get along with, or at least that's what people tell me. When I'm not typing away at my keyboard, you might find me swimming or reading a good book. Let's build something amazing together!. </p>
         </section>
         <section id="skills">
           <h2>My Stack</h2>
@@ -37,22 +37,19 @@ function App() {
           <h2>My Projects</h2>
           <div class="project-cards">
             <div class="project-card">
-              <a href="https://chirag-rajani.github.io/Wordle/">
-                <img src="project1.jpg" alt="Project 1" />
+              <a href="https://chirag-rajani.github.io/Wordle/">                
                 <h3>Wordle</h3>
                 <p>A web app that generates random five-letter words for the popular game, Wordle.</p>
               </a>
             </div>
             <div class="project-card">
-              <a href="https://chirag-rajani.github.io/Audiophile-Website/">
-                <img src="project2.jpg" alt="Project 2" />
+              <a href="https://chirag-rajani.github.io/Audiophile-Website/">                
                 <h3>Audiophile Website</h3>
                 <p>A responsive website for a fictional high-end audio equipment company.</p>
               </a>
             </div>
             <div class="project-card">
-              <a href="https://chirag-rajani.github.io/Fylo/">
-                <img src="project3.jpg" alt="Project 3" />
+              <a href="https://chirag-rajani.github.io/Fylo/">                
                 <h3>Fylo</h3>
                 <p>A landing page for a cloud-based file storage and sharing service.</p>
               </a>
