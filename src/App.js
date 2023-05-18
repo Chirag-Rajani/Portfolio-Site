@@ -4,6 +4,14 @@ import './Animations.css';
 
 
 function App() {
+
+  const handleDownloadCV = () => {
+    // Replace the URL with the actual URL of your PDF file
+    const cvUrl = 'https://example.com/path/to/your/cv.pdf';
+    window.open(cvUrl, '_blank');
+  };
+
+
   return (
     <div className="App scale-in-vertical-top">
       <header className="App-header">
@@ -14,13 +22,14 @@ function App() {
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#download-cv">CV</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <section id="about">
           <h2>About Me</h2>
-          <p>Hi there, I'm Chirag Rajani, and I'm thrilled to be an aspiring web developer. From a young age, I've been captivated by the power and potential of technology. My passion for coding has led me to constantly explore and learn new skills, always with a pragmatic approach. Some might say that I have high energy, but I simply see it as being committed to my goals, and I won't rest until I land my first junior role. Oh, and by the way, I'm pretty easy to get along with, or at least that's what people tell me. When I'm not typing away at my keyboard, you might find me swimming or reading a good book. Let's build something amazing together!. </p>
+          <p>Hi there, I'm Chirag Rajani, and I'm thrilled to be an aspiring web developer. From a young age, I've been captivated by the power and potential of technology. My passion for computers has led me to constantly explore and learn new skills, always with a pragmatic approach. Some might say that I have high energy, but I simply see it as being committed to my goals, and I won't rest until I land my first junior role. Oh, and by the way, I'm pretty easy to get along with, or at least that's what people tell me. When I'm not typing away at my keyboard, you might find me swimming or reading a good book. Let's build something amazing together!. </p>
         </section>
         <section id="skills">
           <h2>My Stack</h2>
@@ -35,27 +44,31 @@ function App() {
 
         <section id="projects">
           <h2>My Projects</h2>
-          <div class="project-cards">
-            <div class="project-card">
-              <a href="https://chirag-rajani.github.io/Wordle/">                
+          <div className="project-cards">
+            <div className="project-card">
+              <a href="https://chirag-rajani.github.io/Wordle/">
                 <h3>Wordle</h3>
-                <p>A web app that generates random five-letter words for the popular game, Wordle.</p>
+                <img src={process.env.PUBLIC_URL + '/wordle.png'} alt="Wordle Project" />
+                <p>A web app that recreates the popular game, Wordle. <br /> (I encourage you to play it)</p>
               </a>
             </div>
-            <div class="project-card">
-              <a href="https://chirag-rajani.github.io/Audiophile-Website/">                
+            <div className="project-card">
+              <a href="https://chirag-rajani.github.io/Audiophile-Website/">
                 <h3>Audiophile Website</h3>
+                <img src={process.env.PUBLIC_URL + '/audiophille.png'} alt="Audiophile Website Project" />
                 <p>A responsive website for a fictional high-end audio equipment company.</p>
               </a>
             </div>
-            <div class="project-card">
-              <a href="https://chirag-rajani.github.io/Fylo/">                
+            <div className="project-card">
+              <a href="https://chirag-rajani.github.io/Fylo/">
                 <h3>Fylo</h3>
+                <img src={process.env.PUBLIC_URL + '/fylo.png'} alt="Fylo Project" />
                 <p>A landing page for a cloud-based file storage and sharing service.</p>
               </a>
             </div>
           </div>
         </section>
+
 
         <section id="contact">
           <h2>Contact Me</h2>
@@ -70,6 +83,12 @@ function App() {
 
         </section>
 
+        <section id="download-cv">
+          <h2>Download My CV</h2>
+          <button classId="cvButton" className="cvButton" onClick={handleDownloadCV}>
+            Download PDF
+          </button>
+        </section>
       </main>
       <footer>
         <p>Copyright Chirag Rajani© 2023</p>
