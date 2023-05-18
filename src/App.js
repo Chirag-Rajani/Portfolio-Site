@@ -66,6 +66,13 @@ function App() {
                 <p>A landing page for a cloud-based file storage and sharing service.</p>
               </a>
             </div>
+            <div className="project-card">
+              <a href="https://chirag-rajani.github.io/Huddle/">
+                <h3>Huddle</h3>
+                <img src={process.env.PUBLIC_URL + '/huddle.png'} alt="Fylo Project" />
+                <p>A responsive home page for a fictional company built with React.</p>
+              </a>
+            </div>
           </div>
         </section>
 
