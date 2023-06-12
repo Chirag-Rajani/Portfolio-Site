@@ -1,22 +1,22 @@
 import React from 'react';
 import './App.css';
 import './Animations.css';
-
+import cvFile from './ChiragRajaniCV.pdf';
 
 function App() {
-
   const handleDownloadCV = () => {
-    // Replace the URL with the actual URL of your PDF file
-    const cvUrl = 'https://example.com/path/to/your/cv.pdf';
-    window.open(cvUrl, '_blank');
+    const link = document.createElement('a');
+    link.href = cvFile;
+    link.download = 'ChiragRajaniCV.pdf';
+    link.target = '_blank';
+    link.click();
   };
-
 
   return (
     <div className="App scale-in-vertical-top">
       <header className="App-header">
         <h1>Hello, my name is Chirag</h1>
-        <nav id>
+        <nav>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -36,12 +36,11 @@ function App() {
           <ul>
             <li><img src="https://cdn.iconscout.com/icon/free/png-512/react-226053.png?f=avif&w=256" alt="React logo" /></li>
             <li><img src="https://cdn.iconscout.com/icon/free/png-512/html5-41-1175209.png?f=avif&w=256" alt="HTML/CSS logo" /></li>
-            <li><img src=" https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png" alt="JavaScript logo" /></li>
+            <li><img src="https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png" alt="JavaScript logo" /></li>
             <li><img src="https://cdn.iconscout.com/icon/free/png-512/nodejs-2-226035.png" alt="Node.js logo" /></li>
             <li><img src="https://cdn.iconscout.com/icon/free/png-512/python-2-226051.png?f=avif&w=256" alt="Python logo" /></li>
           </ul>
         </section>
-
         <section id="projects">
           <h2>My Projects</h2>
           <div className="project-cards">
@@ -69,30 +68,32 @@ function App() {
             <div className="project-card">
               <a href="https://chirag-rajani.github.io/Huddle/">
                 <h3>Huddle</h3>
-                <img src={process.env.PUBLIC_URL + '/huddle.png'} alt="Fylo Project" />
+                <img src={process.env.PUBLIC_URL + '/huddle.png'} alt="Huddle Project" />
                 <p>A responsive home page for a fictional company built with React.</p>
+              </a>
+            </div>
+            <div className="project-card">
+              <a href="https://chirag-rajani.github.io/BMI-calculator/">
+                <h3>BMI calculator</h3>
+                <img src={process.env.PUBLIC_URL + '/BMI.png'} alt="BMI calculator Project" />
+                <p>A responsive website that can calculate BMI in Imperial and Metric units as well as a dark mode function.</p>
               </a>
             </div>
           </div>
         </section>
-
-
         <section id="contact">
           <h2>Contact Me</h2>
-          <p>If you like what you see so far and would like us to work together. Don't hesistate to get in touch.</p>
+          <p>If you like what you see so far and would like us to work together. Don't hesitate to get in touch.</p>
           <a className="emailButton" href="mailto:chirag.rajani97@gmail.com">
             <img src="https://cdn.iconscout.com/icon/free/png-512/email-20-83988.png?f=avif&w=256" alt="Email Me" />
           </a>
-
           <a className='phoneButton' href="tel:1234567890">
-            <img src="https://cdn.iconscout.com/icon/free/png-512/call-10-83987.png?f=avif&w=256" alt="Phone me"></img>
+            <img src="https://cdn.iconscout.com/icon/free/png-512/call-10-83987.png?f=avif&w=256" alt="Phone me" />
           </a>
-
         </section>
-
         <section id="download-cv">
           <h2>Download My CV</h2>
-          <button classId="cvButton" className="cvButton" onClick={handleDownloadCV}>
+          <button className="cvButton" onClick={handleDownloadCV}>
             Download PDF
           </button>
         </section>
@@ -105,4 +106,3 @@ function App() {
 }
 
 export default App;
-
