@@ -87,7 +87,7 @@ function App() {
           <a className="emailButton" href="mailto:chirag.rajani97@gmail.com">
             <img src="https://cdn.iconscout.com/icon/free/png-512/email-20-83988.png?f=avif&w=256" alt="Email Me" />
           </a>
-          <a className='phoneButton' href="tel:1234567890">
+          <a className='phoneButton' href="tel:+447754494799">
             <img src="https://cdn.iconscout.com/icon/free/png-512/call-10-83987.png?f=avif&w=256" alt="Phone me" />
           </a>
         </section>
